@@ -1,4 +1,9 @@
 
+# 痛点
+ - muiapy相对底层一些，需要大量编码，为此，再次封装了一下
+ - 只能使用ironpython编写 Window UI的自动化测试脚本，为此采用了三种方式封装: 命令行、交互、socket(简单RPC)
+ - 建议采用RPC模式， 打开 uiwpfdriver.exe服务器，监听localhost:5820，然后按照约定的格式写出请求，加密成base64，发送即可
+
 # uiwpfdriver工作原理
 
 ![](https://github.com/RockFeng0/uiwpfdriver/raw/master/pic/principle.png)
